@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500&display=swap');
+
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a, a:hover{
+    text-decoration: none;
+}
+
+a:hover{
+    color: var(--primary-color) !important;
+}
+
+ul, ol{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --primary-color:#A82c48;
+    --secondry-color:#51121d;
+    --third-color:#f98169;
+    --white-color:#fff;
+    --text-color:#555;
+    --text-gray:#999;
+    --primary-font:'Roboto', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    font-family: var(--primary-font);
+    font-size: 100%;
+    font-weight: 400;
+}
+
+
+
+
+/* 
+-------------------------------------
+         Custome Scroll Bar
+-------------------------------------
+*/
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: var(--white-color);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--primary-color);
+}
+
+
+
+/* 
+-------------------------------------
+         Custome CSS Desgin
+-------------------------------------
+*/
+
+
+
+h1{
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 48px;
+    color: var(--secondry-color);
+}
+
+
+h2{
+    font-size: 40px;
+    text-transform: capitalize;
+    font-family: var(--primary-font);
+    font-weight: 700;
+    line-height: 48px;
+    color: var(--secondry-color);
+}
+
+
+h4{
+    color: var(--secondry-color);
+    font-family: var(--primary-font);
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+
+
+h5{
+    color: var(--primary-color);
+    text-transform: capitalize;
+    font-family: var(--primary-font);
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+p{
+    font-size: 16px;
+    color: var(--text-color);
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 1px;
+}
+
+.main-btn{
+    display: inline-block;
+    padding: 10px 20px;
+    line-height: 28px;
+    background-color: var(--primary-color);
+    border: 3px solid var(--primary-color);
+    color: var(--white-color);
+    font-size: 15px;
+    /* box-shadow: 0px 2px 10px -1px rgb(0, 0, 0 / 19%); */
+    font-weight: 600;
+
+    text-transform: capitalize;
+}
+
+.white-btn{
+    padding: 12px 24px;
+    line-height: 25px;
+    background-color: var(--white-color);
+    border: 1px solid  var(--primary-color);
+    color: var(--text-color);
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: capitalize;
+    box-shadow: 0px 2px 10px -1px rgb(0, 0, 0 / 19%);
+    transition:all .4s ease-out 0s;
+}
+
+.main-btn:hover{
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 3px solid var(--primary-color);
+}
+
+.white-btn:hover{
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+.wrapper{
+    padding: 128px 0;
+}
+
+.text-content{
+    width: 70%;
+    margin: auto;
+}
+
+
+
+/* 
+-------------------------------------
+         Header Desgin
+-------------------------------------
+*/
+
+
+
+.navigation-wrap{
+    /* border: 2px solid red; */
+    position: fixed;
+    width: 100%;
+    left: 0;
+    z-index: 1000;
+    transition: 0.3s;
+    /* margin: 20px; */
+    /* box-shadow: 1px 3px 30px black; */
+    /* background-color: var(--white-color); */
+}
+
+.navigation-wrap .nav-item{
+    padding:  0 0 10px;
+    transition: all 200ms linear;
+}
+
+.navbar-toggler:focus{
+    outline: unset;
+    border: unset;
+    box-shadow: none;
+
+}
+
+
+.nav-link{
+    font-size: 18px;
+    margin-right: 30px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--primary-color);
+    letter-spacing: 1px;
+}
+
+.navigation-wrap .main-btn{
+    padding: 7px 20px;
+    border-radius: 5px;
+    box-shadow: none;
+}
+
+.navigation-wrap.scroll-on{
+    /* border: 2px solid red; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--white-color);
+    box-shadow: 0 10px 20px 0 rgb(0, 0, 0, 0.09);
+}
+
+/* 
+-------------------------------------
+         Banner
+-------------------------------------
+*/
+
+.top-banner{
+    width: 100%;
+    background: url('images-2/bg/bg-1.jpg') center no-repeat;
+    background-size: cover;
+    padding: 200px 0 500px;
+}
+
+
+
+
+/* 
+-------------------------------------
+         Counter Desgin
+-------------------------------------
+*/
+
+.counter-section{
+    background-color: var(--primary-color);
+    padding: 40px 0;
+    color: var(--white-color);
+
+}
+.counter-section h2{
+    color: var(--white-color);
+}
+
+.counter-section p{
+    color: var(--white-color);
+    text-transform: uppercase;
+}
+
+
+/* 
+-------------------------------------
+         About Section
+-------------------------------------
+*/
+
+.about-section{
+    background-color: var(--white-color);
+}
+
+.about-section .card, 
+.about-section .card img{
+    border-radius: 10px;
+}
+.about-section .text-sec{
+    padding-left: 32px;
+}
+
+
+/* ---- */
+
+.about-section .food-type{
+    padding-top:30px;
+    /* border: 2px solid red; */
+}
+
+.food-type ul li{
+    font-size: 16px;
+    color: var(--text-color);
+    line-height: 32px;
+    margin-left: 30px;
+}
+
+.food-type .fa-check{
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+/* 
+-------------------------------------
+         Story Section
+-------------------------------------
+*/
+
+
+
+.story-section{
+    width: 100%;
+    height: 420px;
+    background: url('images-2/bg/bg-2.jpg') center no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    color: var(--primary-color);
+}
+
+
+
+/* 
+-------------------------------------
+         Reviews Section
+-------------------------------------
+*/
+
+.reviews-section{
+    background-color: var(--primary-color);
+}
+
+.reviews-section .carousel-item{
+    padding: 250px 200px;
+    background-color: var(--white-color);
+    border-radius: 12px;
+    text-align: center;
+}
+
+
+.reviews-section .carousel-item .carousel-caption p{
+    font-size: 20px;
+    line-height:40px;
+    
+    
+}
+
+.reviews-section .carousel-item .carousel-caption img{
+    max-width: 120px;
+    margin-bottom: 30px;
+    margin-left: 44%;
+    border-radius: 50%;
+}
+
+.reviews-section .carousel-indicators{
+    bottom: -20%;
+}
+
+
+.reviews-section .carousel-indicators button{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    outline: none;
+    opacity: 0.2;
+    margin-right: 1rem;
+}
+
+
+
+.reviews-section .carousel-indicators button.active{
+    opacity: 1;
+}
+/* 
+-------------------------------------
+         Explore Food Section
+-------------------------------------
+*/
+
+
+.explore-food .card{
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background-color: transparent;
+    transition: 0.3s;
+    padding: 15px 20px;
+
+}
+
+.explore-food .card:hover{
+
+    box-shadow: 0 0 10px 3px #bdbcbc;
+    transform: translateY(-3px);
+
+}
+
+.explore-food .card img{
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.explore-food .card span{
+    
+    color: var(--primary-color);
+    display: block;
+    font-size: 24px;
+    padding-bottom: 16px;
+    border-bottom: 2px solid #eee;
+}
+
+.explore-food .card span del{
+    color: var(--text-gray);
+    margin-left: 10px;
+}
+
+/* 
+-------------------------------------
+         Baked Food Section
+-------------------------------------
+*/
+
+.book-food{
+    width: 100%;
+    background:url('images-2/bg/bg-3.jpg') center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 0 71px;
+    padding: 60px;
+}
+.book-food .row h2{
+    color: var(--white-color);
+}
+
+
+/* 
+-------------------------------------
+         News letter Section
+-------------------------------------
+*/
+
+
+.newsletter{
+    width: 55%;
+    margin: 0 auto;
+}
+
+.newsletter .form-control{
+    height: 48px;
+    padding: 0 20px;
+    width: 100%;
+    /* border: none; */
+    background: transparent;
+}
+
+/* 
+-------------------------------------
+         Footer Section
+-------------------------------------
+*/
+
+.footer-section{
+    background-color: var(--primary-color);
+}
+
+.footer-section .footer-link:hover{
+    color: var(--white-color) !important;
+}
+
+.footer-section .footer-link{
+    color: var(--white-color);
+    font-size: 18px;
+    padding: 0 23px;
+    text-decoration: none;
+}
+
+.footer-section  a i{
+    padding: 0 26px;
+    font-size: 26px;
+    color: var(--white-color);
+}
+
+
+
+
+
+
+
+
